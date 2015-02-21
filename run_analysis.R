@@ -60,8 +60,6 @@ run_analysis <- function()
 	# aggregate data frame with average of each variable for each activity and each subject
 	sub <- aggregate(meanstdv,list(meanstdv$subject,meanstdv$activity), mean)
 
-	sub
-
 	# write.table() using row.name=FALSE
 	data <- write.table(sub,row.name=FALSE)
 
