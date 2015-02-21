@@ -63,6 +63,6 @@ run_analysis <- function()
 	sub
 
 	# write.table() using row.name=FALSE
-	#data <- write.table(sub,row.name=FALSE)
+	data <- write.table(sub,row.name=FALSE)
 
 }
